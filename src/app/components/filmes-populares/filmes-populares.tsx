@@ -10,11 +10,11 @@ export async function FilmesPopulares() {
     await filmesPopularesRequest.json()
 
   return (
-    <section className="text-center">
+    <section className="text-center md:px-8 md:pt-10 md:pb-1">
       <h2 className="text-2xl font-bold mt-2 text-orange-600 uppercase">
         Assista os melhores filmes
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-6">
+      <div className="grid grid-cols-2 md:grid-cols-6 md:my-12">
         {filmesPopulares &&
           filmesPopulares.results
             .splice(0, 6)

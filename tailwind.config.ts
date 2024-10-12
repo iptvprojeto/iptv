@@ -13,7 +13,7 @@ const config: Config = {
         foreground: 'var(--foreground)',
       },
       backgroundImage: {
-        banner: "url('/images/banner-lg.jpg')",
+        banner: "url('/images/banner-lg-compress.jpg')",
       },
     },
   },

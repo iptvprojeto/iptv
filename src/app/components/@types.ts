@@ -3,6 +3,7 @@ export type FilmeSerie = {
   poster_path: string
   title: string
   name: string
+  overview: string
 }
 
 export type FilmesSeriesPopularesResponse = {

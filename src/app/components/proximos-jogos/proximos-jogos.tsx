@@ -32,11 +32,11 @@ export async function ProximosJogos() {
   })
 
   return (
-    <section className="text-center">
+    <section className="text-center md:pt-10 md:pb-1">
       <h2 className="text-2xl font-bold mt-2 text-orange-600 uppercase">
         Assista a todos os jogos
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-8">
+      <div className="grid grid-cols-2 md:grid-cols-8 md:my-12">
         {jogosOrdenados
           ?.slice(0, 8)
           ?.map((jogo) => <Jogo key={jogo.id} jogo={jogo} />)}

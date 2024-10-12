@@ -10,11 +10,11 @@ export async function SeriePopulares() {
     await seriesPopularesRequest.json()
 
   return (
-    <section className="text-center bg-orange-600 pt-2">
+    <section className="text-center bg-orange-600 pt-2 md:px-8 md:pt-10 md:pb-1">
       <h2 className="text-2xl font-bold text-white uppercase">
         Assista as melhores series
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-6">
+      <div className="grid grid-cols-2 md:grid-cols-6 md:my-12">
         {seriesPopulares &&
           seriesPopulares.results
             .splice(0, 6)
