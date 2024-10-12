@@ -9,7 +9,7 @@ export function FilmeCard({ filme }: { filme: FilmeSerie }) {
         href={`https://www.themoviedb.org/movie/${filme.id}`}
         target="blank"
       >
-        <div className="m-2 p-3 bg-orange-600 h-80 flex flex-col items-center rounded-md md:relative group">
+        <div className="m-2 p-3 bg-orange-600 h-full flex flex-col items-center rounded-md md:relative group">
           <div className="relative w-full h-full transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0">
             <Image
               alt={`Capa do Filme ${filme.title}`}

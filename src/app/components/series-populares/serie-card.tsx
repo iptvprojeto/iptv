@@ -5,7 +5,7 @@ import { FilmeSerie } from '../@types'
 export function SerieCard({ serie }: { serie: FilmeSerie }) {
   return (
     <Link href={`https://www.themoviedb.org/tv/${serie.id}`} target="blank">
-      <div className="m-2 p-3 bg-white h-80 flex flex-col items-center rounded-md md:relative group">
+      <div className="m-2 p-3 bg-white h-full flex flex-col items-center rounded-md md:relative group">
         <div className="relative w-full h-full transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0">
           <Image
             alt={`Capa do serie ${serie.name}`}
